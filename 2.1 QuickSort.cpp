@@ -31,8 +31,16 @@ void printArray(int arr[], int size) {
     printf("\n");
 }
 int main() {
-    int arr[] = {10, 7, 8, 9, 1, 5};
-    int n = sizeof(arr) / sizeof(arr[0]);
+	int n ,arr[20];
+	printf("enter a array size :");
+	scanf("%d",&n);
+	for(int i=0;i<n;i++){
+		printf("Array : [%d]",i);
+		scanf("%d",&arr[i]);
+	}
+
+    //int arr[] = {10, 7, 8, 9, 1, 5};
+    // int n = sizeof(arr) / sizeof(arr[0]);
     printf("Given array: ");
     printArray(arr, n);
     quickSort(arr, 0, n - 1);
